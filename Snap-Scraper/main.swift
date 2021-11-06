@@ -43,7 +43,11 @@ ALGORITHM
 import Foundation
 import Alamofire
 
+<<<<<<< HEAD
 let MapDownloader = Scraper()
+=======
+let MapDownloader = SCMapDownloader()
+>>>>>>> 1162413 (Commit version 0.5b to Git)
 if CommandLine.argc < 2 {
     MapDownloader.interactiveMode()
 } else {

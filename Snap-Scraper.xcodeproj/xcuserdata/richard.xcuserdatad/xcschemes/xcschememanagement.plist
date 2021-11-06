@@ -4,7 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+<<<<<<< HEAD
 		<key>Snap-Scraper.xcscheme_^#shared#^_</key>
+=======
+		<key>SC-MapDownloader.xcscheme_^#shared#^_</key>
+>>>>>>> 1162413 (Commit version 0.5b to Git)
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
