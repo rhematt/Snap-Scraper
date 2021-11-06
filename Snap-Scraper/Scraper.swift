@@ -10,7 +10,7 @@ import Foundation
 
 enum OptionType: String {
     //These are the individual keys entered into the CLT
-    case SCMapDownloader = "d"
+    case downloadmedia = "d"
     case check = "c"
     case help = "h"
     case quit = "q"
@@ -24,7 +24,7 @@ enum OptionType: String {
     
     init(value: String) {
         switch value {
-        case "d": self = .SCMapDownloader
+        case "d": self = .downloadmedia
         case "c": self = .check
         case "h": self = .help
         case "q": self = .quit
@@ -39,7 +39,7 @@ enum OptionType: String {
 }
 
 
-class SCMapDownloader {
+class Scraper {
     
     let consoleIO = ConsoleIO()
     
@@ -54,7 +54,7 @@ class SCMapDownloader {
         
         switch option {
             
-        case .SCMapDownloader:
+        case .downloadmedia:
             if argCount != 5 {
                 if argCount > 6 {
                     consoleIO.writeMessage("Too many arguments for option \(option.rawValue)", to: .error)
@@ -186,7 +186,7 @@ class SCMapDownloader {
                 shouldQuit = true
                 consoleIO.quiter()
                 
-            case .unknown, .SCMapDownloader:
+            case .unknown, .downloadmedia:
                 consoleIO.writeMessage("Unknown option \(value)", to: .error)
             }
         }
