@@ -272,7 +272,6 @@ Funding goals include:
 =======
 >>>>>>> 28e8783 (Update README.md)
 ### Automated Content Moderation Team
-- Matthew Sorell
 - Sanjana Tanuku
 - Siyu Wang
 - Liyu Xu
