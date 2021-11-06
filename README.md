@@ -27,4 +27,8 @@
     -------------------------------@@#     RM    *&@&@@-----------------------------
     --------------------------------------------------------------------------------
 
-Snap Scraper is an open source intelligence tool which enables users to download media uploaded to Snapchat's Snap Map using a set of latitude and longitiude co-ordinates. 
+Snap Scraper is an open source intelligence tool which enables users to download media uploaded to Snapchat's Snap Map using a set of latitude and longitiude co-ordinates. This project is in no way affiliated with, authorized, maintained, sponsored or endorsed by Snap inc. or any of its affiliates or subsidiaries. This program is for education, forensic and bug reporting purposes only and is provided without warranty. 
+
+When using this tool please cite the following publications:
+
+1. Richard Matthews, Kieren Lovell, Matthew Sorell, Ghost protocol – Snapchat as a method of surveillance, Forensic Science International: Digital Investigation, Volume 36, Supplement, 2021, 301112, ISSN 2666-2817, https://doi.org/10.1016/j.fsidi.2021.301112.
