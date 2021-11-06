@@ -1,4 +1,5 @@
 # Snap-Scraper
+<<<<<<< HEAD
 ![alt text](https://github.com/rhematt/Snap-Scraper/releases/download/v0.5.0-b/icon.png)
 
 ## Description
@@ -125,3 +126,5 @@ The names Snap, Snap Map, and Snapchat as well as related names, marks, emblems 
 All names, logos, images and brands are property of their respective owners.
 
 This tool is provided as is for instructional purposes only without any warranty. Any use is not authorised or implied. 
+=======
+>>>>>>> 86a667a (Created ReadMe file)
