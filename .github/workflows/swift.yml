@@ -14,7 +14,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build
-      run: swift package init --type library
-      run: swift package generate-xcodeproj
+      run: swift package init --type executable
     - name: Run tests
       run: swift test -v
