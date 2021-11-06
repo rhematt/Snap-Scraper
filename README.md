@@ -97,6 +97,7 @@ Funding goals include:
 ### Project Lead 
 - Richard Matthews
 
+<<<<<<< HEAD
 ### Automated Content Moderation Team
 - Sanjana Tanuku
 - Siyu Wang
@@ -268,7 +269,10 @@ Funding goals include:
 ### Student Supervisor
 - Matthew Sorell
 
+=======
+>>>>>>> 28e8783 (Update README.md)
 ### Automated Content Moderation Team
+- Matthew Sorell
 - Sanjana Tanuku
 - Siyu Wang
 - Liyu Xu
