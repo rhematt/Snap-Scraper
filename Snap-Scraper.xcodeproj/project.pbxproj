@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 <<<<<<< HEAD
+<<<<<<< HEAD
 		0086376A38BA2DCE2FE3B9F9 /* libPods-Snap-Scraper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E815403EB150A56A33BE0930 /* libPods-Snap-Scraper.a */; };
 		797D39002733692300D3984E /* Snap-Scraper in Sources */ = {isa = PBXBuildFile; fileRef = 799957242468E7C20057890A /* Snap-Scraper */; platformFilter = ios; };
 		799957282468E7C20057890A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799957272468E7C20057890A /* main.swift */; };
@@ -17,15 +18,21 @@
 		79995743246A6DE00057890A /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79995742246A6DE00057890A /* Downloader.swift */; };
 		79F55DE7246E4AA0004B55C6 /* Check.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F55DE6246E4AA0004B55C6 /* Check.swift */; };
 =======
+=======
+		0086376A38BA2DCE2FE3B9F9 /* libPods-Snap-Scraper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E815403EB150A56A33BE0930 /* libPods-Snap-Scraper.a */; };
+>>>>>>> bd2f2f2 (Renamed bulk files in xCode to Snap-Scraper and repaid signing dependancies)
 		797D39002733692300D3984E /* Snap-Scraper in Sources */ = {isa = PBXBuildFile; fileRef = 799957242468E7C20057890A /* Snap-Scraper */; platformFilter = ios; };
 		799957282468E7C20057890A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799957272468E7C20057890A /* main.swift */; };
 		799957372468EB610057890A /* ConsoleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799957362468EB610057890A /* ConsoleIO.swift */; };
-		799957392468ED140057890A /* SCMapDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799957382468ED140057890A /* SCMapDownloader.swift */; };
+		799957392468ED140057890A /* Scraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799957382468ED140057890A /* Scraper.swift */; };
 		79995741246906E40057890A /* SCApiCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79995740246906E40057890A /* SCApiCalls.swift */; };
 		79995743246A6DE00057890A /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79995742246A6DE00057890A /* Downloader.swift */; };
 		79F55DE7246E4AA0004B55C6 /* Check.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F55DE6246E4AA0004B55C6 /* Check.swift */; };
+<<<<<<< HEAD
 		9ACF478345B882BE4997FA1C /* libPods-SCMapDownloader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F156A23B1E8E95794F28C98 /* libPods-SCMapDownloader.a */; };
 >>>>>>> 1162413 (Commit version 0.5b to Git)
+=======
+>>>>>>> bd2f2f2 (Renamed bulk files in xCode to Snap-Scraper and repaid signing dependancies)
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,13 +49,17 @@
 
 /* Begin PBXFileReference section */
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		3F156A23B1E8E95794F28C98 /* libPods-SCMapDownloader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SCMapDownloader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 >>>>>>> 1162413 (Commit version 0.5b to Git)
+=======
+>>>>>>> bd2f2f2 (Renamed bulk files in xCode to Snap-Scraper and repaid signing dependancies)
 		79962F6D2734ABF000097EF7 /* Snap-Scraper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Snap-Scraper.entitlements"; sourceTree = "<group>"; };
 		799957242468E7C20057890A /* Snap-Scraper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Snap-Scraper"; sourceTree = BUILT_PRODUCTS_DIR; };
 		799957272468E7C20057890A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		799957362468EB610057890A /* ConsoleIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleIO.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 <<<<<<< HEAD
 		799957382468ED140057890A /* Scraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scraper.swift; sourceTree = "<group>"; };
 		79995740246906E40057890A /* SCApiCalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCApiCalls.swift; sourceTree = "<group>"; };
@@ -65,6 +76,15 @@
 		93CBC47C179BA0DF5A936403 /* Pods-SCMapDownloader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCMapDownloader.release.xcconfig"; path = "Target Support Files/Pods-SCMapDownloader/Pods-SCMapDownloader.release.xcconfig"; sourceTree = "<group>"; };
 		DCE74C5AFF59181795CF88E6 /* Pods-SCMapDownloader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCMapDownloader.debug.xcconfig"; path = "Target Support Files/Pods-SCMapDownloader/Pods-SCMapDownloader.debug.xcconfig"; sourceTree = "<group>"; };
 >>>>>>> 1162413 (Commit version 0.5b to Git)
+=======
+		799957382468ED140057890A /* Scraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scraper.swift; sourceTree = "<group>"; };
+		79995740246906E40057890A /* SCApiCalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCApiCalls.swift; sourceTree = "<group>"; };
+		79995742246A6DE00057890A /* Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
+		79F55DE6246E4AA0004B55C6 /* Check.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Check.swift; sourceTree = "<group>"; };
+		84281F5AF6FCCFCC36548267 /* Pods-Snap-Scraper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snap-Scraper.debug.xcconfig"; path = "Target Support Files/Pods-Snap-Scraper/Pods-Snap-Scraper.debug.xcconfig"; sourceTree = "<group>"; };
+		D965DF16FA1900CE93894940 /* Pods-Snap-Scraper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snap-Scraper.release.xcconfig"; path = "Target Support Files/Pods-Snap-Scraper/Pods-Snap-Scraper.release.xcconfig"; sourceTree = "<group>"; };
+		E815403EB150A56A33BE0930 /* libPods-Snap-Scraper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Snap-Scraper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+>>>>>>> bd2f2f2 (Renamed bulk files in xCode to Snap-Scraper and repaid signing dependancies)
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,10 +93,14 @@
 			buildActionMask = 2147483647;
 			files = (
 <<<<<<< HEAD
+<<<<<<< HEAD
 				0086376A38BA2DCE2FE3B9F9 /* libPods-Snap-Scraper.a in Frameworks */,
 =======
 				9ACF478345B882BE4997FA1C /* libPods-SCMapDownloader.a in Frameworks */,
 >>>>>>> 1162413 (Commit version 0.5b to Git)
+=======
+				0086376A38BA2DCE2FE3B9F9 /* libPods-Snap-Scraper.a in Frameworks */,
+>>>>>>> bd2f2f2 (Renamed bulk files in xCode to Snap-Scraper and repaid signing dependancies)
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,12 +111,17 @@
 			isa = PBXGroup;
 			children = (
 <<<<<<< HEAD
+<<<<<<< HEAD
 				84281F5AF6FCCFCC36548267 /* Pods-Snap-Scraper.debug.xcconfig */,
 				D965DF16FA1900CE93894940 /* Pods-Snap-Scraper.release.xcconfig */,
 =======
 				DCE74C5AFF59181795CF88E6 /* Pods-SCMapDownloader.debug.xcconfig */,
 				93CBC47C179BA0DF5A936403 /* Pods-SCMapDownloader.release.xcconfig */,
 >>>>>>> 1162413 (Commit version 0.5b to Git)
+=======
+				84281F5AF6FCCFCC36548267 /* Pods-Snap-Scraper.debug.xcconfig */,
+				D965DF16FA1900CE93894940 /* Pods-Snap-Scraper.release.xcconfig */,
+>>>>>>> bd2f2f2 (Renamed bulk files in xCode to Snap-Scraper and repaid signing dependancies)
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -101,10 +130,14 @@
 			isa = PBXGroup;
 			children = (
 <<<<<<< HEAD
+<<<<<<< HEAD
 				E815403EB150A56A33BE0930 /* libPods-Snap-Scraper.a */,
 =======
 				3F156A23B1E8E95794F28C98 /* libPods-SCMapDownloader.a */,
 >>>>>>> 1162413 (Commit version 0.5b to Git)
+=======
+				E815403EB150A56A33BE0930 /* libPods-Snap-Scraper.a */,
+>>>>>>> bd2f2f2 (Renamed bulk files in xCode to Snap-Scraper and repaid signing dependancies)
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -133,10 +166,14 @@
 				79962F6D2734ABF000097EF7 /* Snap-Scraper.entitlements */,
 				799957272468E7C20057890A /* main.swift */,
 <<<<<<< HEAD
+<<<<<<< HEAD
 				799957382468ED140057890A /* Scraper.swift */,
 =======
 				799957382468ED140057890A /* SCMapDownloader.swift */,
 >>>>>>> 1162413 (Commit version 0.5b to Git)
+=======
+				799957382468ED140057890A /* Scraper.swift */,
+>>>>>>> bd2f2f2 (Renamed bulk files in xCode to Snap-Scraper and repaid signing dependancies)
 				799957362468EB610057890A /* ConsoleIO.swift */,
 				79995742246A6DE00057890A /* Downloader.swift */,
 				79995740246906E40057890A /* SCApiCalls.swift */,
@@ -216,10 +253,14 @@
 			);
 			outputPaths = (
 <<<<<<< HEAD
+<<<<<<< HEAD
 				"$(DERIVED_FILE_DIR)/Pods-Snap-Scraper-checkManifestLockResult.txt",
 =======
 				"$(DERIVED_FILE_DIR)/Pods-SCMapDownloader-checkManifestLockResult.txt",
 >>>>>>> 1162413 (Commit version 0.5b to Git)
+=======
+				"$(DERIVED_FILE_DIR)/Pods-Snap-Scraper-checkManifestLockResult.txt",
+>>>>>>> bd2f2f2 (Renamed bulk files in xCode to Snap-Scraper and repaid signing dependancies)
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -238,10 +279,14 @@
 				799957372468EB610057890A /* ConsoleIO.swift in Sources */,
 				797D39002733692300D3984E /* Snap-Scraper in Sources */,
 <<<<<<< HEAD
+<<<<<<< HEAD
 				799957392468ED140057890A /* Scraper.swift in Sources */,
 =======
 				799957392468ED140057890A /* SCMapDownloader.swift in Sources */,
 >>>>>>> 1162413 (Commit version 0.5b to Git)
+=======
+				799957392468ED140057890A /* Scraper.swift in Sources */,
+>>>>>>> bd2f2f2 (Renamed bulk files in xCode to Snap-Scraper and repaid signing dependancies)
 				79995741246906E40057890A /* SCApiCalls.swift in Sources */,
 				799957282468E7C20057890A /* main.swift in Sources */,
 			);
@@ -375,19 +420,27 @@
 		7999572C2468E7C20057890A /* Debug */ = {
 			isa = XCBuildConfiguration;
 <<<<<<< HEAD
+<<<<<<< HEAD
 			baseConfigurationReference = 84281F5AF6FCCFCC36548267 /* Pods-Snap-Scraper.debug.xcconfig */;
 =======
 			baseConfigurationReference = DCE74C5AFF59181795CF88E6 /* Pods-SCMapDownloader.debug.xcconfig */;
 >>>>>>> 1162413 (Commit version 0.5b to Git)
+=======
+			baseConfigurationReference = 84281F5AF6FCCFCC36548267 /* Pods-Snap-Scraper.debug.xcconfig */;
+>>>>>>> bd2f2f2 (Renamed bulk files in xCode to Snap-Scraper and repaid signing dependancies)
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 <<<<<<< HEAD
+<<<<<<< HEAD
 				CODE_SIGN_ENTITLEMENTS = "";
 =======
 				CODE_SIGN_ENTITLEMENTS = SCMapDownloader/SCMapDownloader.entitlements;
 >>>>>>> 1162413 (Commit version 0.5b to Git)
+=======
+				CODE_SIGN_ENTITLEMENTS = "";
+>>>>>>> bd2f2f2 (Renamed bulk files in xCode to Snap-Scraper and repaid signing dependancies)
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0.4;
@@ -404,19 +457,27 @@
 		7999572D2468E7C20057890A /* Release */ = {
 			isa = XCBuildConfiguration;
 <<<<<<< HEAD
+<<<<<<< HEAD
 			baseConfigurationReference = D965DF16FA1900CE93894940 /* Pods-Snap-Scraper.release.xcconfig */;
 =======
 			baseConfigurationReference = 93CBC47C179BA0DF5A936403 /* Pods-SCMapDownloader.release.xcconfig */;
 >>>>>>> 1162413 (Commit version 0.5b to Git)
+=======
+			baseConfigurationReference = D965DF16FA1900CE93894940 /* Pods-Snap-Scraper.release.xcconfig */;
+>>>>>>> bd2f2f2 (Renamed bulk files in xCode to Snap-Scraper and repaid signing dependancies)
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 <<<<<<< HEAD
+<<<<<<< HEAD
 				CODE_SIGN_ENTITLEMENTS = "";
 =======
 				CODE_SIGN_ENTITLEMENTS = SCMapDownloader/SCMapDownloader.entitlements;
 >>>>>>> 1162413 (Commit version 0.5b to Git)
+=======
+				CODE_SIGN_ENTITLEMENTS = "";
+>>>>>>> bd2f2f2 (Renamed bulk files in xCode to Snap-Scraper and repaid signing dependancies)
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0.4;

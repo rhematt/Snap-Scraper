@@ -2,13 +2,19 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bd2f2f2 (Renamed bulk files in xCode to Snap-Scraper and repaid signing dependancies)
 <dict>
 	<key>com.apple.developer.applesignin</key>
 	<array>
 		<string></string>
 	</array>
 </dict>
+<<<<<<< HEAD
 =======
 <dict/>
 >>>>>>> 1162413 (Commit version 0.5b to Git)
+=======
+>>>>>>> bd2f2f2 (Renamed bulk files in xCode to Snap-Scraper and repaid signing dependancies)
 </plist>

@@ -44,10 +44,14 @@ import Foundation
 import Alamofire
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 let MapDownloader = Scraper()
 =======
 let MapDownloader = SCMapDownloader()
 >>>>>>> 1162413 (Commit version 0.5b to Git)
+=======
+let MapDownloader = Scraper()
+>>>>>>> bd2f2f2 (Renamed bulk files in xCode to Snap-Scraper and repaid signing dependancies)
 if CommandLine.argc < 2 {
     MapDownloader.interactiveMode()
 } else {
