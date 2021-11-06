@@ -3,11 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		797D39002733692300D3984E /* Snap-Scraper in Sources */ = {isa = PBXBuildFile; fileRef = 799957242468E7C20057890A /* Snap-Scraper */; platformFilter = ios; };
 		799957282468E7C20057890A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799957272468E7C20057890A /* main.swift */; };
+		799957372468EB610057890A /* ConsoleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799957362468EB610057890A /* ConsoleIO.swift */; };
+		799957392468ED140057890A /* SCMapDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799957382468ED140057890A /* SCMapDownloader.swift */; };
+		79995741246906E40057890A /* SCApiCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79995740246906E40057890A /* SCApiCalls.swift */; };
+		79995743246A6DE00057890A /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79995742246A6DE00057890A /* Downloader.swift */; };
+		79F55DE7246E4AA0004B55C6 /* Check.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F55DE6246E4AA0004B55C6 /* Check.swift */; };
+		9ACF478345B882BE4997FA1C /* libPods-SCMapDownloader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F156A23B1E8E95794F28C98 /* libPods-SCMapDownloader.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +30,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		799957242468E7C20057890A /* SC-MapDownloader */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "SC-MapDownloader"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F156A23B1E8E95794F28C98 /* libPods-SCMapDownloader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SCMapDownloader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79962F6D2734ABF000097EF7 /* Snap-Scraper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Snap-Scraper.entitlements"; sourceTree = "<group>"; };
+		799957242468E7C20057890A /* Snap-Scraper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Snap-Scraper"; sourceTree = BUILT_PRODUCTS_DIR; };
 		799957272468E7C20057890A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		799957362468EB610057890A /* ConsoleIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleIO.swift; sourceTree = "<group>"; };
+		799957382468ED140057890A /* SCMapDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCMapDownloader.swift; sourceTree = "<group>"; };
+		79995740246906E40057890A /* SCApiCalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCApiCalls.swift; sourceTree = "<group>"; };
+		79995742246A6DE00057890A /* Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
+		79F55DE6246E4AA0004B55C6 /* Check.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Check.swift; sourceTree = "<group>"; };
+		93CBC47C179BA0DF5A936403 /* Pods-SCMapDownloader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCMapDownloader.release.xcconfig"; path = "Target Support Files/Pods-SCMapDownloader/Pods-SCMapDownloader.release.xcconfig"; sourceTree = "<group>"; };
+		DCE74C5AFF59181795CF88E6 /* Pods-SCMapDownloader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCMapDownloader.debug.xcconfig"; path = "Target Support Files/Pods-SCMapDownloader/Pods-SCMapDownloader.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,43 +48,70 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ACF478345B882BE4997FA1C /* libPods-SCMapDownloader.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51BF7934DA1E29FFB5694107 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DCE74C5AFF59181795CF88E6 /* Pods-SCMapDownloader.debug.xcconfig */,
+				93CBC47C179BA0DF5A936403 /* Pods-SCMapDownloader.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		54A54986B9AD9E9B1503BFE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F156A23B1E8E95794F28C98 /* libPods-SCMapDownloader.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7999571B2468E7C20057890A = {
 			isa = PBXGroup;
 			children = (
-				799957262468E7C20057890A /* SC-MapDownloader */,
+				799957262468E7C20057890A /* Snap-Scraper */,
 				799957252468E7C20057890A /* Products */,
+				51BF7934DA1E29FFB5694107 /* Pods */,
+				54A54986B9AD9E9B1503BFE1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		799957252468E7C20057890A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				799957242468E7C20057890A /* SC-MapDownloader */,
+				799957242468E7C20057890A /* Snap-Scraper */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		799957262468E7C20057890A /* SC-MapDownloader */ = {
+		799957262468E7C20057890A /* Snap-Scraper */ = {
 			isa = PBXGroup;
 			children = (
+				79962F6D2734ABF000097EF7 /* Snap-Scraper.entitlements */,
 				799957272468E7C20057890A /* main.swift */,
+				799957382468ED140057890A /* SCMapDownloader.swift */,
+				799957362468EB610057890A /* ConsoleIO.swift */,
+				79995742246A6DE00057890A /* Downloader.swift */,
+				79995740246906E40057890A /* SCApiCalls.swift */,
+				79F55DE6246E4AA0004B55C6 /* Check.swift */,
 			);
-			path = "SC-MapDownloader";
+			path = "Snap-Scraper";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		799957232468E7C20057890A /* SC-MapDownloader */ = {
+		799957232468E7C20057890A /* Snap-Scraper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7999572B2468E7C20057890A /* Build configuration list for PBXNativeTarget "SC-MapDownloader" */;
+			buildConfigurationList = 7999572B2468E7C20057890A /* Build configuration list for PBXNativeTarget "Snap-Scraper" */;
 			buildPhases = (
+				F9F624AEBB8F74E8941D4780 /* [CP] Check Pods Manifest.lock */,
 				799957202468E7C20057890A /* Sources */,
 				799957212468E7C20057890A /* Frameworks */,
 				799957222468E7C20057890A /* CopyFiles */,
@@ -77,9 +120,9 @@
 			);
 			dependencies = (
 			);
-			name = "SC-MapDownloader";
+			name = "Snap-Scraper";
 			productName = "SC-MapDownloader";
-			productReference = 799957242468E7C20057890A /* SC-MapDownloader */;
+			productReference = 799957242468E7C20057890A /* Snap-Scraper */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -89,7 +132,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = "Richard Matthews";
 				TargetAttributes = {
 					799957232468E7C20057890A = {
@@ -97,7 +140,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7999571F2468E7C20057890A /* Build configuration list for PBXProject "SC-MapDownloader" */;
+			buildConfigurationList = 7999571F2468E7C20057890A /* Build configuration list for PBXProject "Snap-Scraper" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,16 +153,47 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				799957232468E7C20057890A /* SC-MapDownloader */,
+				799957232468E7C20057890A /* Snap-Scraper */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F9F624AEBB8F74E8941D4780 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SCMapDownloader-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		799957202468E7C20057890A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79F55DE7246E4AA0004B55C6 /* Check.swift in Sources */,
+				79995743246A6DE00057890A /* Downloader.swift in Sources */,
+				799957372468EB610057890A /* ConsoleIO.swift in Sources */,
+				797D39002733692300D3984E /* Snap-Scraper in Sources */,
+				799957392468ED140057890A /* SCMapDownloader.swift in Sources */,
+				79995741246906E40057890A /* SCApiCalls.swift in Sources */,
 				799957282468E7C20057890A /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,6 +227,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -160,7 +235,9 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 0.5b;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 2HUHX64JSZ;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -177,6 +254,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Alamofire/";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -213,6 +291,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -220,7 +299,9 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 0.5b;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 2HUHX64JSZ;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -231,10 +312,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Alamofire/";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
+				"SDKROOT[arch=*]" = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
@@ -242,22 +325,43 @@
 		};
 		7999572C2468E7C20057890A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCE74C5AFF59181795CF88E6 /* Pods-SCMapDownloader.debug.xcconfig */;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_ENTITLEMENTS = SCMapDownloader/SCMapDownloader.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0.4;
 				DEVELOPMENT_TEAM = 2HUHX64JSZ;
 				ENABLE_HARDENED_RUNTIME = YES;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		7999572D2468E7C20057890A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93CBC47C179BA0DF5A936403 /* Pods-SCMapDownloader.release.xcconfig */;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_ENTITLEMENTS = SCMapDownloader/SCMapDownloader.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0.4;
 				DEVELOPMENT_TEAM = 2HUHX64JSZ;
 				ENABLE_HARDENED_RUNTIME = YES;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -265,7 +369,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7999571F2468E7C20057890A /* Build configuration list for PBXProject "SC-MapDownloader" */ = {
+		7999571F2468E7C20057890A /* Build configuration list for PBXProject "Snap-Scraper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				799957292468E7C20057890A /* Debug */,
@@ -274,7 +378,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7999572B2468E7C20057890A /* Build configuration list for PBXNativeTarget "SC-MapDownloader" */ = {
+		7999572B2468E7C20057890A /* Build configuration list for PBXNativeTarget "Snap-Scraper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7999572C2468E7C20057890A /* Debug */,
