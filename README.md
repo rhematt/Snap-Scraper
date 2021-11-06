@@ -95,6 +95,7 @@ Funding goals include:
 - Richard Matthews
 
 ### Automated Content Moderation Team
+- Matthew Sorell
 - Sanjana Tanuku
 - Siyu Wang
 - Liyu Xu
