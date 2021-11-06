@@ -1,0 +1,6 @@
+module Pods_Snap_Scraper {
+  umbrella header "Pods-Snap-Scraper-umbrella.h"
+
+  export *
+  module * { export * }
+}
