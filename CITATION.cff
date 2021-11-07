@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Matthews"
+  given-names: "Richard"
+  orcid: "https://orcid.org/0000-0002-7744-7631"
+title: "Snap-Scraper"
+version: 0.5.1
+doi: 10.5281/zenodo.5651314
+date-released: 2021-11-07
+url: "https://github.com/rhematt/Snap-Scraper"
+preferred-citation:
+  type: article
+  authors:
+  - family-names: "Matthews"
+    given-names: "Richard"
+    orcid: "https://orcid.org/0000-0002-7744-7631"
+  - family-names: "Lovell"
+    given-names: "Kieren"
+    orcid: "https://orcid.org/0000-0003-3978-8483"
+  - family-names: "Sorell"
+    given-names: "Matthew"
+    orcid: "https://orcid.org/0000-0003-3288-1175"
+  doi: "10.1016/j.fsidi.2021.301112"
+  title: "Ghost protocol - Snapchat as a method of surveillance"
+  journal: "Forensic Science International: Digital Investigation"
+  title: "My awesome research software"
+  issue: 301112
+  volume: "36, Supplement"
+  year: 2021
