@@ -99,6 +99,7 @@ Funding goals include:
 
 <<<<<<< HEAD
 ### Automated Content Moderation Team
+- Matthew Sorell
 - Sanjana Tanuku
 - Siyu Wang
 - Liyu Xu
