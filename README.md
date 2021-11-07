@@ -1,4 +1,4 @@
-# Snap-Scraper
+# Snap Scraper
 ![alt text](https://github.com/rhematt/Snap-Scraper/releases/download/v0.5.0-b/icon.png)
 
 ## Description
