@@ -14,19 +14,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
       run: swift package init --type executable
-=======
       run: swift build -v
->>>>>>> 0d1dad4 (Create swift.yml)
-=======
-      run: swift package init --type library
-      run: swift package generate-xcodeproj
->>>>>>> 8a1d784 (Update swift.yml)
-=======
-      run: swift package init --type executable
->>>>>>> 278c9a4 (Update swift.yml)
+
     - name: Run tests
-      run: swift test -v
+    - run: swift test -v
