@@ -69,10 +69,11 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## Dontations
-Dontations are appreciated to help support the continued development, maintenance and upkeep of this product.
+<p>Dontations are appreciated to help support the continued development, maintenance and upkeep of this product.</p>
 
-Dontate using Monero:
-41hZLF5Mhh7gDeiTLLws8dXMsi9NpyM6cWUQJoTJNAWkbx4YccDagRMWYED4cyHw481VjYyiEgkEh9mxHR1tJeNy7ce9yNp
+<p>Dontate using Monero:</p>
+<img src="assets/img/F5569A40-FE0F-44CC-A8CE-684385E93F93.jpeg" alt="41hZLF5Mhh7gDeiTLLws8dXMsi9NpyM6cWUQJoTJNAWkbx4YccDagRMWYED4cyHw481VjYyiEgkEh9mxHR1tJeNy7ce9yNp" height="150" />
+
 
 Funding goals include:
 - Server hosting for a web hosted version of SnapScraper.
