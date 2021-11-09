@@ -1,16 +1,16 @@
-Snap Scraper is an open source intelligence tool which enables users to download media uploaded to Snapchat's Snap Map using a set of latitude and longitiude co-ordinates. This project is in no way affiliated with, authorized, maintained, sponsored or endorsed by Snap inc. or any of its affiliates or subsidiaries. This program is for education, forensic and bug reporting purposes only and is provided without warranty. 
+## Screenshots
+<p float="left">
+  <img src="https://live.staticflickr.com/65535/51659970798_6e65449754_c.jpg" height="150" />
+  <img src="https://live.staticflickr.com/65535/51658934547_b306008bff_c.jpg" height="150" /> 
+  <img src="https://live.staticflickr.com/65535/51658934662_a399a1c1f0_c.jpg" height="150" />
+  <img src="https://live.staticflickr.com/65535/51658934712_98376e0b4a_c.jpg" height="150" />
+  <img src="https://live.staticflickr.com/65535/51660553014_050c14a390_b.jpg" height="150" />
+</p>
 
+## Citation
 When using this tool please cite the following publication:
 
 1. Richard Matthews, Kieren Lovell, Matthew Sorell, Ghost protocol – Snapchat as a method of surveillance, Forensic Science International: Digital Investigation, Volume 36, Supplement, 2021, 301112, ISSN 2666-2817, https://doi.org/10.1016/j.fsidi.2021.301112.
-
-## Screenshots
-
-<img src ="https://live.staticflickr.com/65535/51659970798_6e65449754_c.jpg" height="300px">
-<img src ="https://live.staticflickr.com/65535/51658934547_b306008bff_c.jpg" height="300px">
-<img src ="https://live.staticflickr.com/65535/51658934662_a399a1c1f0_c.jpg" height="300px">
-<img src ="https://live.staticflickr.com/65535/51658934712_98376e0b4a_c.jpg" height="300px">
-<img src ="https://live.staticflickr.com/65535/51660553014_050c14a390_b.jpg" height="300px">
 
 ## Installation
 
@@ -25,7 +25,6 @@ Optionally, a icon.png file is included which can be used to change the icon of 
 At this point in time, SnapScraper only supports MacOS. However, dependancies have been checked and users should be able to complile the code on their own file system without any issues. Ensure Alamofire has been installed.
 
 ## Usage
-
 Double click SnapScraper to launch the command line tool. SnapScraper works best when the defaul window size is set to 80x50.
 
 You should be presented with the following window:
@@ -60,7 +59,6 @@ Finalise the extraction process as above and then quit SnapScraper by selecting 
 To save a log of activity navigate to _Shell-> Export Text as..._ A save box will open. Navigate to the _Snapchat_ folder within users _Downloads_ folder and find the recent URL listing that has been saved (if used from previous steps). Click on this file and change the save as file name by removing the prefix word _listing_ to _log_. This will save a text file contianing the contents of the terminal window and show all activity that was contducted while SnapScraper was run.
 
 ### Other options
-
 SnapScraper has a fully functional menu. Other options include displaying the MIT license, publication information associated with the current release of the tool, information to support the continued development and maintenance and the current development log. To access enter the relevant option keys followed by the enter key.
 
 ## Contributing
@@ -71,7 +69,6 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## Dontations
-
 Dontations are appreciated to help support the continued development, maintenance and upkeep of this product.
 
 Dontate using Monero:
@@ -111,13 +108,4 @@ Funding goals include:
 MIT (c) 2020 Dr Richard Matthews
 
 ## Disclaimer
-
-This project is in no way affiliated, associated, authorised or endorsed by the education institutions of those indicated in the credits section of this repo. This includes but is not limited to The University of Adelaide, Australia and TalTech (Tallinn University of Technology).
-
-This project is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the application Snapchat, Snap inc. or any of its subsidiaries or its affiliates. The official Snapchat website can be found at http://www.snapchat.com.
-
-The names Snap, Snap Map, and Snapchat as well as related names, marks, emblems and images are registered trademarks of their respective owners.
-
-All names, logos, images and brands are property of their respective owners.
-
-This tool is provided as is for instructional purposes only without any warranty. Any use is not authorised or implied. 
+This project is in no way affiliated, associated, authorised or endorsed by the education institutions of those indicated in the credits section of this repo. This includes but is not limited to The University of Adelaide, Australia and TalTech (Tallinn University of Technology), Estonia. This project is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the application Snapchat, Snap inc. or any of its subsidiaries or its affiliates. The official Snapchat website can be found at http://www.snapchat.com. The names Snap, Snap Map, and Snapchat as well as related names, marks, emblems and images are registered trademarks of their respective owners. All names, logos, images and brands are property of their respective owners. This tool is provided as is for instructional purposes only without any warranty. Any use is not authorised or implied. 
