@@ -4,3 +4,5 @@ description: Snap Scraper is an open source intelligence tool which enables user
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-minimal
+github:
+  release_url: https://github.com/rhematt/Snap-Scraper/releases/download/v0.5.1-b/SnapScraper
