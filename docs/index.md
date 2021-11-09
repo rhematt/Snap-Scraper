@@ -37,7 +37,7 @@ The current options for use are indicated in the command window. Select to optio
 
 The main option users will select will be the check option to locate snap media on the Snap Map. To select this option type 'c' followed by the enter key.
 
-SnapScraper will then ask you for a set of longitude and lattitude coordinates which can be obtained from map.snapchat.com as discussed in the publication _"Richard Matthews, Kieren Lovell, Matthew Sorell, Ghost protocol – Snapchat as a method of surveillance, Forensic Science International: Digital Investigation, Volume 36, Supplement, 2021, 301112, ISSN 2666-2817, https://doi.org/10.1016/j.fsidi.2021.301112."_. Navigate to map.snapchat.com and note the URL of the location you wish to extract snap media from ie. _https://map.snapchat.com/@24.931153,44.873214,6.04z_. The coordinates to enter into SnapScraper are located in the URL after the @ symbol. The first number is the lattitude, the second the longitude and the final the zoom level. Lattitude and longitude should be entered into SnapScraper to 6 decimal places while zoom should be entered to 2 decimal places.
+SnapScraper will then ask you for a set of longitude and lattitude coordinates which can be obtained from map.snapchat.com as discussed in the publication _"Richard Matthews, Kieren Lovell, Matthew Sorell, Ghost protocol – Snapchat as a method of surveillance, Forensic Science International: Digital Investigation, Volume 36, Supplement, 2021, 301112, ISSN 2666-2817, [https://doi.org/10.1016/j.fsidi.2021.301112](https://doi.org/10.1016/j.fsidi.2021.301112)."_. Navigate to [https://map.snapchat.com](https://map.snapchat.com) and note the URL of the location you wish to extract snap media from ie. _https://map.snapchat.com/@24.931153,44.873214,6.04z_. The coordinates to enter into SnapScraper are located in the URL after the @ symbol, comma delimited. The first number is the lattitude, the second the longitude and the final the zoom level. Lattitude and longitude should be entered into SnapScraper to 6 decimal places while zoom should be entered to 2 decimal places.
 
 When each coordinate is entered into the program SnapScraper will then poll Snap Map for snap media at the desired location. When media is located the meta data of the media will be printed to the command window.
 
@@ -62,11 +62,13 @@ To save a log of activity navigate to _Shell-> Export Text as..._ A save box wil
 SnapScraper has a fully functional menu. Other options include displaying the MIT license, publication information associated with the current release of the tool, information to support the continued development and maintenance and the current development log. To access enter the relevant option keys followed by the enter key.
 
 ## Contributing
-SnapScraper was born out of a discussion in 2017 while in Tallinn Estonia. In the spirit of that initial collaboration I'd love for you to help bring this project to its full vision. The wiki contains a road map for the codebase including a wishlist of future functionality.
+SnapScraper was born out of a discussion in 2017 while in Tallinn Estonia. In the spirit of that initial collaboration I'd love for you to help bring this project to its full vision. The [wiki](https://github.com/rhematt/Snap-Scraper/wiki) contains a road map for the codebase including a wishlist of future functionality.
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
+
+Bug reports make the project stronger. Please open new issues for any problems encountered.
 
 ## Dontations
 <p>Dontations are appreciated to help support the continued development, maintenance and upkeep of this product.</p>
