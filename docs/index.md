@@ -1,7 +1,4 @@
 # Snap Scraper
-![alt text](https://github.com/rhematt/Snap-Scraper/releases/download/v0.5.0-b/icon.png)
-
-## Description
 
 Snap Scraper is an open source intelligence tool which enables users to download media uploaded to Snapchat's Snap Map using a set of latitude and longitiude co-ordinates. This project is in no way affiliated with, authorized, maintained, sponsored or endorsed by Snap inc. or any of its affiliates or subsidiaries. This program is for education, forensic and bug reporting purposes only and is provided without warranty. 
 
@@ -11,11 +8,11 @@ When using this tool please cite the following publication:
 
 ## Screenshots
 
-<img src ="https://live.staticflickr.com/65535/51659970798_6e65449754_c.jpg" height="300px"></imgsrc>
-<img src ="https://live.staticflickr.com/65535/51658934547_b306008bff_c.jpg" height="300px"></imgsrc>
-<img src ="https://live.staticflickr.com/65535/51658934662_a399a1c1f0_c.jpg" height="300px"></imgsrc>
-<img src ="https://live.staticflickr.com/65535/51658934712_98376e0b4a_c.jpg" height="300px"></imgsrc>
-<img src ="https://live.staticflickr.com/65535/51660553014_050c14a390_b.jpg" height="300px"></imgsrc>
+<img src ="https://live.staticflickr.com/65535/51659970798_6e65449754_c.jpg" height="300px">
+<img src ="https://live.staticflickr.com/65535/51658934547_b306008bff_c.jpg" height="300px">
+<img src ="https://live.staticflickr.com/65535/51658934662_a399a1c1f0_c.jpg" height="300px">
+<img src ="https://live.staticflickr.com/65535/51658934712_98376e0b4a_c.jpg" height="300px">
+<img src ="https://live.staticflickr.com/65535/51660553014_050c14a390_b.jpg" height="300px">
 
 ## Installation
 
