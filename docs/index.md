@@ -1,5 +1,3 @@
-# Snap Scraper
-
 Snap Scraper is an open source intelligence tool which enables users to download media uploaded to Snapchat's Snap Map using a set of latitude and longitiude co-ordinates. This project is in no way affiliated with, authorized, maintained, sponsored or endorsed by Snap inc. or any of its affiliates or subsidiaries. This program is for education, forensic and bug reporting purposes only and is provided without warranty. 
 
 When using this tool please cite the following publication:
