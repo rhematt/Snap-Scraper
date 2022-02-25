@@ -108,7 +108,7 @@ Funding goals include:
 2. Richard Matthews. "Snapchat Disclosed on HackerOne: CreatorID Leaked from Public Content Posted to SnapMaps", May 7, 2020. Accessed November 06, 2021. [https://hackerone.com/reports/867521](https://hackerone.com/reports/867521).
 
 ## License
-MIT (c) 2020 Dr Richard Matthews
+MIT (c) 2020 Dr Richard Matthews Exclusions: as of 2022-02-22 no member of the South Australian Police Force or their agents are permitted to use this tool.
 
 ## Disclaimer
 This project is in no way affiliated, associated, authorised or endorsed by the education institutions of those indicated in the credits section of this repo. This includes but is not limited to The University of Adelaide, Australia and TalTech (Tallinn University of Technology), Estonia. This project is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the application Snapchat, Snap inc. or any of its subsidiaries or its affiliates. The official Snapchat website can be found at [http://www.snapchat.com](http://www.snapchat.com). The names Snap, Snap Map, and Snapchat as well as related names, marks, emblems and images are registered trademarks of their respective owners. All names, logos, images and brands are property of their respective owners. This tool is provided as is for instructional purposes only without any warranty. Any use is not authorised or implied. 
