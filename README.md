@@ -114,7 +114,6 @@ Funding goals include:
 
 ## License
 MIT (c) 2020 Dr Richard Matthews
-Exclusions: as of 2022-02-22 no member of the South Australian Police Force or their agents are permitted to use this tool.
 
 ## Disclaimer
 
