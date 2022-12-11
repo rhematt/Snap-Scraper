@@ -43,7 +43,7 @@ class Downloader {
      */
     
     func downloadFile(lat:String, long:String, urlArray:[String], urlDictionary:[String:String])->Void{
-        //date setup
+        //date setup - this isnt static....
         let date = Date()
         let format = DateFormatter()
         format.dateFormat = "yyyy-MM-dd HH:mm:ss"
@@ -57,6 +57,7 @@ class Downloader {
         
         if let s3Url = urlArray.popLast(){
             //set download destination
+            //sleep(1) //rate limiting request 1 second
             let destination: DownloadRequest.Destination = { _, _ in
                 let documentsURL = FileManager.default.urls(for: .downloadsDirectory, in: .userDomainMask)[0]
                 
@@ -93,7 +94,7 @@ class Downloader {
             AF.download(s3Url, to: destination)
                 .downloadProgress(queue: DispatchQueue.global(qos: .utility)) { progress in
                     // Called on utility dispatch queue
-                    //print("Download progress: \(progress.fractionCompleted)")
+                    print("Download progress: \(progress.fractionCompleted)")
             }
             .response { response in
                 
@@ -103,7 +104,7 @@ class Downloader {
                 //created should be the extracted timestamp from metadata
                 //modifed should be the timestamp it was extracted on
                 
-                /* Currently timestamp of media creation is placed into filename. This is less than satisfactory and should be placed into the metadata of the file. */
+                /* Currently timestamp of media download tine is placed into filename. This is less than satisfactory and should be placed into the metadata of the file. */
             
             
             //call next download

@@ -14,6 +14,7 @@ class Check {
     
     func checker(lat:String, long:String, zoom:String, consoleIO:ConsoleIO){
         let epoch = caller.getEpoch(lat: lat,lon: long,zoom: zoom)
+        print("EPOCH IS:", epoch)
         let (mediaURLS, mediaDictionary) = caller.getPlaylist(lat: lat,lon: long,zoom: zoom,epoch: epoch,flag:"checker")
         
         //exportToLog()

@@ -100,7 +100,7 @@ class SCApiCalls {
         //request.addValue("https://map.snapchat.com/@-34.871315,138.555850,9.91z", forHTTPHeaderField: "Referer")
         request.addValue("2", forHTTPHeaderField: "Content-Length")
         request.addValue("ms.sc-jpl.com", forHTTPHeaderField: "Host")
-        request.addValue("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1 Safari/605.1.15", forHTTPHeaderField: "User-Agent")
+        request.addValue("Mozilla/5.0 (Macintosh; Intel Mac OS X 13_0_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1 Safari/605.1.15", forHTTPHeaderField: "User-Agent")
         request.addValue("en-US", forHTTPHeaderField: "Accept-Language")
         request.addValue("gzip, deflate, br", forHTTPHeaderField: "Accept-Encoding")
         request.addValue("keep-alive", forHTTPHeaderField: "Connection")
@@ -137,21 +137,24 @@ class SCApiCalls {
     }
     
     func getPlaylist(lat: String = "-34.939798", lon: String = "138.611250", zoom: String = "6.5", epoch: Int, flag:String? = nil) -> ([String], [String:String] ){
+        
+        //Insert JSON SCHEMA here
+        
         // This file was generated from JSON Schema using quicktype, do not modify it directly.
         // To parse the JSON, add this file to your project and do:
         //
-        //   let sCNewJSON = try? newJSONDecoder().decode(SCNewJSON.self, from: jsonData)
-        
-        // MARK: - SCNewJSON
-        struct SCNewJSON: Codable {
+        //   let sc20221209 = try? newJSONDecoder().decode(Sc20221209.self, from: jsonData)
+
+        // MARK: - Sc20221209
+        struct Sc20221209: Codable {
             let manifest: Manifest?
         }
-        
+
         // MARK: - Manifest
         struct Manifest: Codable {
             let elements: [Element]?
         }
-        
+
         // MARK: - Element
         struct Element: Codable {
             let id: String?
@@ -159,102 +162,62 @@ class SCApiCalls {
             let timestamp: String?
             let snapInfo: SnapInfo?
         }
-        
+
         // MARK: - SnapInfo
         struct SnapInfo: Codable {
             let snapMediaType: SnapMediaType?
             let title: Title?
             let streamingMediaInfo: StreamingMediaInfo?
-            let overlayText: String?
             let streamingThumbnailInfo: StreamingThumbnailInfo?
-            let publicMediaInfo: PublicMediaInfo?
+            let overlayText: String?
         }
-        
-        // MARK: - PublicMediaInfo
-        struct PublicMediaInfo: Codable {
-            let publicImageMediaInfo: PublicImageMediaInfo?
-        }
-        
-        // MARK: - PublicImageMediaInfo
-        struct PublicImageMediaInfo: Codable {
-            let mediaURL: String?
-            
-            enum CodingKeys: String, CodingKey {
-                case mediaURL = "mediaUrl"
-            }
-        }
-        
+
         enum SnapMediaType: String, Codable {
             case snapMediaTypeVideo = "SNAP_MEDIA_TYPE_VIDEO"
             case snapMediaTypeVideoNoSound = "SNAP_MEDIA_TYPE_VIDEO_NO_SOUND"
         }
-        
+
         // MARK: - StreamingMediaInfo
         struct StreamingMediaInfo: Codable {
-            let prefixURL: String?
-            let overlayURL: OverlayURL?
-            let previewURL: PreviewURL?
-            let previewWithOverlayURL: PreviewWithOverlayURL?
-            let mediaURL: MediaURL?
-            
+            let mediaURL: String?
+
             enum CodingKeys: String, CodingKey {
-                case prefixURL = "prefixUrl"
-                case overlayURL = "overlayUrl"
-                case previewURL = "previewUrl"
-                case previewWithOverlayURL = "previewWithOverlayUrl"
                 case mediaURL = "mediaUrl"
             }
         }
-        
-        enum MediaURL: String, Codable {
-            case mediaMp4 = "media.mp4"
-        }
-        
-        enum OverlayURL: String, Codable {
-            case overlayPNG = "overlay.png"
-        }
-        
-        enum PreviewURL: String, Codable {
-            case previewJpg = "preview.jpg"
-        }
-        
-        enum PreviewWithOverlayURL: String, Codable {
-            case previewOverlayJpg = "preview_overlay.jpg"
-        }
-        
+
         // MARK: - StreamingThumbnailInfo
         struct StreamingThumbnailInfo: Codable {
             let infos: [Info]?
         }
-        
+
         // MARK: - Info
         struct Info: Codable {
             let thumbnailType: ThumbnailType?
             let thumbnailURL: String?
-            
+
             enum CodingKeys: String, CodingKey {
                 case thumbnailType
                 case thumbnailURL = "thumbnailUrl"
             }
         }
-        
+
         enum ThumbnailType: String, Codable {
             case imageThumbnailType = "IMAGE_THUMBNAIL_TYPE"
-            case videoThumbnailType = "VIDEO_THUMBNAIL_TYPE"
         }
-        
+
         // MARK: - Title
         struct Title: Codable {
             let strings: [StringElement]?
             let fallback: String?
         }
-        
+
         // MARK: - StringElement
         struct StringElement: Codable {
             let locale: Locale?
             let text: String?
         }
-        
+
         enum Locale: String, Codable {
             case ar = "ar"
             case de = "de"
@@ -267,6 +230,8 @@ class SCApiCalls {
             case ru = "ru"
             case zh = "zh"
         }
+
+
         
         
         
@@ -280,11 +245,11 @@ class SCApiCalls {
         if Double(lat) != nil{
             if Double(lon) != nil{
                 if let zoomer = Double(zoom){
-                    // let a = magicLat*latitude
+                    //let a = magicLat*latitude
                     //let b = magicLon*long
                     //let c = magicZoom*zoomer
                     //let radius =  a+b+c
-                    let radius = 2E+06*exp(-0.626*zoomer)
+                    let radius = 2E+06*exp(-0.625*zoomer)
                     //print("DEBUG:\(radius) @ zoom of: \(zoom)")
                     parameters = "{\"requestGeoPoint\":{\"lat\":\(lat),\"lon\":\(lon)},\"zoomLevel\":\(zoom),\"tileSetId\":{\"flavor\":\"default\",\"epoch\":\(epoch),\"type\":1},\"radiusMeters\":\(radius),\"maximumFuzzRadius\":0}\n\n"
                 }
@@ -308,7 +273,7 @@ class SCApiCalls {
         //formulate the url field refferer from lat, lon and zoom.
         
         let requester = "https://map.snapchat.com/@\(lat),\(lon),\(zoom)z"
-        //print(requester)
+        print(requester)
         
         request.addValue(requester, forHTTPHeaderField: "Referer")
         
@@ -331,22 +296,22 @@ class SCApiCalls {
                 return
             }
             
-            let SCNewJSON = try? JSONDecoder().decode(SCNewJSON.self, from: data)
-            //print(String(data: data, encoding: .utf8)!)
-            //print("testing")
-            //print("...")
+            let Sc20221209 = try? JSONDecoder().decode(Sc20221209.self, from: data)
+            print(String(data: data, encoding: .utf8)!)
+            print("testing")
+            print("...")
             
             
-            if let numberOfSnaps = SCNewJSON?.manifest?.elements?.count {
-                //print("Value of numberOfSnaps is \(numberOfSnaps)" )
+            if let numberOfSnaps = Sc20221209?.manifest?.elements?.count {
+                print("Value of numberOfSnaps is \(numberOfSnaps)" )
                 
                 if (flag=="checker"){
                     print("")
                     print("There are \(numberOfSnaps) snaps in the region selected.")
                     print("")
                 }
-                let snapContents = SCNewJSON?.manifest?.elements
-                //print("\(String(describing: snapContents))")
+                let snapContents = Sc20221209?.manifest?.elements
+                print("\(String(describing: snapContents))")
                 print("")
                 print("Begining Print of Snap INFO for Log:")
                 print("")
@@ -354,10 +319,10 @@ class SCApiCalls {
                     
                     print("Snap number: \(n+1)")
                     //SNAP_MEDIA_TYPE is VIDEO or VIDEONOSOUND
-                    if let mediaList:String = (snapContents?[n].snapInfo?.streamingMediaInfo?.prefixURL) {
-                        print("URL: \(mediaList)media.mp4")
-                        returnerA.append("\(mediaList)media.mp4")
-                        if let timeStamp:String = SCNewJSON?.manifest?.elements![n].timestamp{
+                    if let mediaList:String = (snapContents?[n].snapInfo?.streamingMediaInfo?.mediaURL) {
+                        print("URL: \(mediaList)")
+                        returnerA.append("\(mediaList)/media.mp4")
+                        if let timeStamp:String = Sc20221209?.manifest?.elements![n].timestamp{
                             print("TimeStamp: \(timeStamp)")
                             let doubleTime = Double(timeStamp) ?? 0
                             let humanTime = NSDate(timeIntervalSince1970: (doubleTime/1000))
@@ -366,35 +331,35 @@ class SCApiCalls {
                         }else{
                             returnerB.append("0")
                         }
-                        if let duration:Double = SCNewJSON?.manifest?.elements![n].duration {
+                        if let duration:Double = Sc20221209?.manifest?.elements![n].duration {
                             print("Snap Duration: \(duration) seconds")
                         }
                         
-                        if let id:String = SCNewJSON?.manifest?.elements![n].id {
+                        if let id:String = Sc20221209?.manifest?.elements![n].id {
                             print("Snap ID: \(id)")
                         }
                         
-                        if let overlay:String = SCNewJSON?.manifest?.elements![n].snapInfo?.overlayText {
+                        if let overlay:String = Sc20221209?.manifest?.elements![n].snapInfo?.overlayText {
                             print("OverlayText: \(overlay)")
                         }
                         
-                        if let snapMediaType = SCNewJSON?.manifest?.elements![n].snapInfo?.snapMediaType {
+                        if let snapMediaType = Sc20221209?.manifest?.elements![n].snapInfo?.snapMediaType {
                             print("Snap Media Type: \(snapMediaType)")
                         } else {
                             print("Snap Media Type: Image Only")
                         }
                         
-                        if let location:String = SCNewJSON?.manifest?.elements![n].snapInfo?.title?.fallback {
+                        if let location:String = Sc20221209?.manifest?.elements![n].snapInfo?.title?.fallback {
                             print("Location: \(location)")
                         }
                         
                         //print("DEBUG:\(n) \(mediaList)")
                         
-                        //SNAP MEDIA TYPE AHS NO TYPE == IMAGE ONLY
-                    } else if let mediaList:String = SCNewJSON?.manifest?.elements![n].snapInfo?.publicMediaInfo?.publicImageMediaInfo?.mediaURL {
+                        //SNAP MEDIA TYPE HAS NO TYPE == IMAGE ONLY
+                    } else if let mediaList:String = Sc20221209?.manifest?.elements![n].snapInfo?.streamingMediaInfo?.mediaURL {
                         print("URL: \(mediaList)")
                         returnerA.append("\(mediaList)")
-                        if let timeStamp:String = SCNewJSON?.manifest?.elements![n].timestamp{
+                        if let timeStamp:String = Sc20221209?.manifest?.elements![n].timestamp{
                             print("TimeStamp: \(timeStamp)")
                             let doubleTime = Double(timeStamp) ?? 0
                             let humanTime = NSDate(timeIntervalSince1970: (doubleTime/1000))
@@ -403,25 +368,25 @@ class SCApiCalls {
                         }else{
                             returnerB.append("0")
                         }
-                        if let duration:Double = SCNewJSON?.manifest?.elements![n].duration {
+                        if let duration:Double = Sc20221209?.manifest?.elements![n].duration {
                             print("Snap Duration: \(duration) seconds")
                         }
                         
-                        if let id:String = SCNewJSON?.manifest?.elements![n].id {
+                        if let id:String = Sc20221209?.manifest?.elements![n].id {
                             print("Snap ID: \(id)")
                         }
                         
-                        if let overlay:String = SCNewJSON?.manifest?.elements![n].snapInfo?.overlayText {
+                        if let overlay:String = Sc20221209?.manifest?.elements![n].snapInfo?.overlayText {
                             print("OverlayText: \(overlay)")
                         }
                         
-                        if let snapMediaType = SCNewJSON?.manifest?.elements![n].snapInfo?.snapMediaType {
+                        if let snapMediaType = Sc20221209?.manifest?.elements![n].snapInfo?.snapMediaType {
                             print("Snap Media Type: \(snapMediaType)")
                         } else {
                             print("Snap Media Type: Image Only")
                         }
                         
-                        if let location:String = SCNewJSON?.manifest?.elements![n].snapInfo?.title?.fallback {
+                        if let location:String = Sc20221209?.manifest?.elements![n].snapInfo?.title?.fallback {
                             print("Location: \(location)")
                         }
                         //print("DEBUG:\(n) \(mediaList)")

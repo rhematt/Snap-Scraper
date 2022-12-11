@@ -141,7 +141,7 @@ class Scraper {
                     lat = "-34.939798"
                     consoleIO.writeMessage("\n >>> Using default -34.939798")
                 }
-                consoleIO.writeMessage("\nType the longitude to 6 decimal places or press enter for default:")
+                consoleIO.writeMessage("\nType the longitude to 15 decimal places or press enter for default:")
                 var long = consoleIO.getInput()
                 if (long == ""){
                     long = "138.611250"
